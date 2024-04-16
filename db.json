@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tickets": [
+    {
+      "email": "dhoni@gmail.com",
+      "description": "Anyvjhef jhnfji",
+      "ticketGroup": "Any",
+      "toAssign": "Dhoni",
+      "ticketStatus": "Closed",
+      "ticketPriority": "High",
+      "id": 1
+    },
+    {
+      "email": "wtc@gmail.com",
+      "description": "nerf jneifr jnweoi ",
+      "ticketGroup": "Billing",
+      "toAssign": "Rohit",
+      "ticketStatus": "Waiting On Customer",
+      "ticketPriority": "Urgent",
+      "id": 2
+    },
+    {
+      "email": "mndjqgmail.com",
+      "description": "nwjendewjedhuio",
+      "ticketGroup": "Escalation",
+      "toAssign": "Dhoni",
+      "ticketStatus": "Pending",
+      "ticketPriority": "High",
+      "id": 3
+    },
+    {
+      "email": "jnjnmhj@gmail.com",
+      "description": "jwnedjnwo ijiwe wijeoi iqej owjio",
+      "ticketGroup": "Any",
+      "toAssign": "Bhavesh",
+      "ticketStatus": "Open",
+      "ticketPriority": "Low",
+      "id": 4
+    },
+    {
+      "email": "jaijnjian@gmail.com",
+      "description": "jowi  wuhed iu qqhdi q",
+      "ticketGroup": "Any",
+      "toAssign": "Rohit",
+      "ticketStatus": "Pending",
+      "ticketPriority": "High",
+      "id": 5
+    },
+    {
+      "email": "sachin@shubmangill.com",
+      "description": "jhhj jdchj uhaudh ",
+      "ticketGroup": "Customer Support",
+      "toAssign": "Rohit",
+      "ticketStatus": "Pending",
+      "ticketPriority": "Urgent",
+      "id": 6
+    },
+    {
+      "email": "njdihjvw",
+      "description": "jnvjndf ",
+      "ticketGroup": "Escalation",
+      "toAssign": "Bhavesh",
+      "ticketStatus": "Open",
+      "ticketPriority": "Low",
+      "id": 7
+    },
+    {
+      "email": "hijghijerhnf@gmail.com",
+      "description": "hniwej",
+      "ticketGroup": "Escalation",
+      "toAssign": "Bhavesh",
+      "ticketStatus": "Open",
+      "ticketPriority": "High",
+      "id": 8
+    },
+    {
+      "email": "rohit@gmail.com",
+      "description": "hdjhdojincjiwiwu",
+      "ticketGroup": "Escalation",
+      "toAssign": "Virat",
+      "ticketStatus": "Open",
+      "ticketPriority": "High",
+      "id": 9
+    }
+  ],
+  "user": [],
+  "admin": []
+}

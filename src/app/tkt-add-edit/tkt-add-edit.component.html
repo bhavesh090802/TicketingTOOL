@@ -1,0 +1,73 @@
+<div mat-dialog-title>
+  <h1>Ticket Details</h1>
+</div>
+<form [formGroup]="ticketForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          type="email"
+          matInput
+          placeholder="Ex. pat@example.com"
+          formControlName="email"
+        />
+      </mat-form-field> 
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Ticket Description</mat-label>
+        <input
+          matInput
+          #message
+          maxlength="256"
+          placeholder="Ex. I need help with..."
+          formControlName="description"
+        />
+        <mat-hint align="end">Max. {{ message.value.length }} / 256</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Ticket Group</mat-label>
+        <mat-select formControlName="ticketGroup">
+          <mat-option *ngFor="let ticket of tickets" [value]="ticket">
+            {{ ticket }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>To Assign</mat-label>
+        <mat-select formControlName="toAssign">
+          <mat-option *ngFor="let agent of agents" [value]="agent">
+            {{ agent }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Ticket Status</mat-label>
+        <mat-select formControlName="ticketStatus">
+          <mat-option *ngFor="let status of status" [value]="status">
+            {{ status }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Ticket Priority</mat-label>
+        <mat-select formControlName="ticketPriority">
+          <mat-option *ngFor="let priority of priority" [value]="priority">
+            {{ priority }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions class="actions">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+    <!-- <button mat-raised-button color="primary" type="submit">Save</button> -->
+    <button mat-raised-button color="primary" type="submit">{{data? 'Update':'Save'}}</button>
+  </div> 
+</form>

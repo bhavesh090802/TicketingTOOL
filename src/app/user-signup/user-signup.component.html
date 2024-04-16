@@ -1,0 +1,54 @@
+<div class="mycomponent">
+  <div class="body">
+    <form [formGroup]="usersignupForm" (ngSubmit)="onSignupFormSubmit()">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>User Sign-Up</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="row">
+            <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name"/>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="uemail"/>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Username</mat-label>
+              <input matInput formControlName="username"/>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'"  formControlName="password"/>
+              <button
+                mat-icon-button
+                matSuffix
+                (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide"
+              >
+                <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="action">
+            <div class="col-1">
+              <button mat-raised-button color="primary" routerLink="/user-login" type="submit8">Sign-Up</button>
+            </div>
+            <div class="col-2">
+              <p>Already have an account</p>
+              <a routerLink="/user-login">Sign-In</a>
+            </div>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+</div>

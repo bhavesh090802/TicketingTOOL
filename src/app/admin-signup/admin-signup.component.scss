@@ -1,0 +1,56 @@
+.example-card {
+  max-width: 500px;
+  margin-left: 495px;
+  border: 2px solid black;
+  mat-card-title{
+    margin-left: 165px;
+  }
+}
+
+.body{
+  padding-top: 130px;
+}
+
+.mycomponent{
+  background-image: url('bgimg.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+// .example-header-image {
+
+// }
+
+.row{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 13%;
+}
+
+
+.action{
+  margin-left: 13%;
+}
+.col-2{
+  display: flex;
+  flex-direction: row;
+  p{
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  a:hover{
+    color: rgb(90, 141, 218);
+    text-decoration: underline;
+  }
+}
+
+.col-1{
+  button{
+    margin-bottom: 13px;
+    width: 185%;
+  }
+}

@@ -1,0 +1,25 @@
+
+.landing-page {
+  border: 3px solid black;
+  width: 44%;
+  height: 380px;
+  margin: 0px 420px 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  width: 50%;
+  margin: 80px 155px 30px;
+  button {
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+.body {
+  padding-top: 10%;
+  height: 79.2vh;
+  background: linear-gradient(to right, #c9c9cc, #e5e5e7);
+}
